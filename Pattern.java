@@ -7,8 +7,8 @@
 public class Pattern {
 
     //
-    //  Pre-condition: none. Any int is allowed (zero or negative prints nothing).
-    //  Post-condition: Prints "rows" lines of stars. Line n has 2n-1 stars.
+    //  Pre-condition: None
+    //  Post-condition: Prints lines/rows of stars.
     //
     public static void stars(int rows) {
         int line = 1;
@@ -24,9 +24,8 @@ public class Pattern {
     }
 
     //
-    //  Pre-condition: none. Any int is allowed (zero or negative prints nothing).
-    //  Post-condition: Prints "rows" lines where line n is the digit n
-    //  repeated n times.
+    //  Pre-condition: None
+    //  Post-condition: Prints lines/rows of triangles
     //
     public static void triangle(int rows) {
         int line = 1;
@@ -42,10 +41,8 @@ public class Pattern {
     }
 
     //
-    //  Pre-condition: none. Intended for a positive odd start value
-    //  (a value of zero or less prints nothing).
-    //  Post-condition: Prints lines starting with "start" repeated start
-    //  times, then start-2 repeated start-2 times, and so on down to 1.
+    //  Pre-condition: None
+    //  Post-condition: Prints the value and count
     //
     public static void odds(int start) {
         for (int value = start; value >= 1; value -= 2) {
@@ -57,11 +54,8 @@ public class Pattern {
     }
 
     //
-    //  Pre-condition: none. Any int is allowed (zero or negative prints nothing).
-    //  Post-condition: Prints a diamond-like pattern that grows from 1 letter
-    //  to maxE letters and shrinks back to 1. The letter alternates between
-    //  "E" and "O" each line, and the widest line (maxE letters) is always "E".
-    //  So an even maxE starts with "O" and an odd maxE starts with "E".
+    //  Pre-condition: None
+    //  Post-condition: Prints a line pattern
     //
     public static void eo(int maxE) {
         // Growing half: lines 1 through maxE
@@ -76,8 +70,7 @@ public class Pattern {
 
     //
     //  Pre-condition: line is between 1 and maxE.
-    //  Post-condition: Prints one line of the eo pattern containing "line"
-    //  copies of "E" or "O", chosen so the line of length maxE is "E".
+    //  Post-condition: Prints Eo line and letters
     //
     public static void printEoLine(int line, int maxE) {
         String letter = "O";
@@ -91,10 +84,8 @@ public class Pattern {
     }
 
     //
-    //  Pre-condition: none. Any int is allowed (zero or negative prints nothing).
-    //  Post-condition: Prints "rows" lines. Line n is indented n-1 spaces and
-    //  contains the digit n repeated 2*(rows-n)+1 times, forming an upside-down
-    //  pyramid.
+    //  Pre-condition: None
+    //  Post-condition: Prints rows/lines of pyramid
     //
     public static void pyramid(int rows) {
         for (int line = 1; line <= rows; line++) {
@@ -109,9 +100,8 @@ public class Pattern {
     }
 
     //
-    //  Pre-condition: none.
-    //  Post-condition: Calls each pattern method with several test values,
-    //  including edge cases, and prints labeled output to the screen.
+    //  Pre-condition: None
+    //  Post-condition: Calls/prints the rows of each pattern
     //
     public static void main(String[] args) {
         System.out.println("stars(7):");
