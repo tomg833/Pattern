@@ -55,7 +55,7 @@ public class Pattern {
 
     //
     //  Pre-condition: None
-    //  Post-condition: Prints a line pattern
+    //  Post-condition: Prints a "eo" line pattern
     //
     public static void eo(int maxE) {
         // Growing half: lines 1 through maxE
